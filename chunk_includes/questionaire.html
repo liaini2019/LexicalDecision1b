@@ -1,0 +1,55 @@
+<html style='font-family:"Arial",sans-serif'> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <header><h1><p style="text-align:center">问卷</p></h1></header>
+
+  <body>
+    
+    <p><b>在实验结束之前，请最后协助我们完成一个简短的问卷。</b></p>
+    
+    <ol>
+      <li> 
+        <p>您的年龄</p>
+        <input name="Age" type="text" id="age" class="obligatory" />
+      </li>
+      <li>    
+        <p>您的性别</p>
+        <input name="gender" type="radio" value="male" id="mgender" class="obligatory" /><label for="mgender">男</label>
+        <input name="gender" type="radio" value="female" id="fgender" /><label for="fgender">女</label>
+        <input name="gender" type="radio" value="other" id="ogender" /><label for="ogender">其它</label>
+        <input name="gender" type="radio" value="other" id="ogender" /><label for="pgender">拒绝回答</label>
+      </li>
+      <li>
+        <p>您的出生所在地?</p>
+        <input name="Childhood country" type="radio" value="us" id="us" class="obligatory"/> <label for="us">中国大陆</label> <!--changed this to create default US entry -->
+        <input name="Childhood country" type="radio" value="canada" id="canada" class="obligatory"/> <label for="canada">港澳台</label>
+        <input name="Childhood country" type="radio" value="elsewhere" id="elsewhere" class="obligatory"/> <label for="elsewhere">其它地方</label> <!--changed this to create default US entry -->
+      </li>
+      <li>
+        <p>如果是“其它地方”，请进行说明:</p>
+        <input name="Childhood country elsewhere" type="text" value="" id="country2"/> <!-- class="obligatory"/>-->
+      </li>
+      <li>
+        <p>是否使用 <i>除普通话以外</i> 的其它汉语方言?<br></p>
+        <input name="Other native languages" type="radio" value="yes" id="multilingual" class="obligatory" /><label for="multilingual">是</label>
+        <input name="Other native languages" type="radio" value="no" id="monolingual" /><label for="monolingual">否</label>
+      </li>
+      <li>
+        <p>如果是，请说出具体的方言名称 （如 四川话，天津话等）:</p>
+        <input name="Childhood country elsewhere" type="text" value="" id="country2"/> <!-- class="obligatory"/>-->
+      </li>
+      <li>    
+        <p>请问您在实验过程中是否受到干扰？</p>
+        <input name="Distractedness" type="radio" value="yes" id="ydistracted" class="obligatory" /><label for="ydistracted">是</label>
+        <input name="Distractedness" type="radio" value="no" id="ndistracted"/><label for="ndistracted">否</label>
+      </li>
+      <li>
+        <p>您觉得本次实验是关于什么的?</p>
+        <textarea name="Experiment about" id="expabout" cols="40" rows="5"></textarea>
+      </li>
+      <li>
+        <p>关于实验的其他相关意见和建议:</p>
+        <textarea name="Comments" id="comments" cols="40" rows="5"></textarea>
+      </li>
+    </ol>
+  </body>
+</html>
